@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-green-200">Nav</h3>
+            <h3 className="text-xl font-semibold text-green-200">Navigation</h3>
             <ul className="mt-4 space-y-3 ml-5">
               <li><ScrollLink to="accueil" smooth={true} duration={500} offset={-70} href="/"><span className="hover:text-gray-300 cursor-pointer text-lg">Accueil</span></ScrollLink></li>
               <li><ScrollLink to="a-propos" smooth={true} duration={500} offset={-70} href="/about"><span className="hover:text-gray-300 cursor-pointer">À propos</span></ScrollLink></li>

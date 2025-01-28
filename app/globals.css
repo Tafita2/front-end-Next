@@ -2,20 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* 🌟 Style global */
+html {
+  @apply scroll-smooth;
+  /* Effet de défilement fluide */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-gray-50 text-gray-800 font-sans antialiased;
+}
+
+/* 🌟 Typographie et couleurs */
+h1 {
+  @apply text-4xl font-bold text-gray-900 leading-tight;
+}
+
+h2 {
+  @apply text-3xl font-semibold text-gray-800 leading-snug;
+}
+
+h3 {
+  @apply text-2xl font-medium text-gray-700 leading-snug;
+}
+
+p {
+  @apply text-lg text-gray-600 leading-relaxed;
+}
+
+/* 🌟 Liens */
+a {
+  @apply text-blue-600 hover:text-blue-800 transition-colors duration-300;
+}
+
+/* 🌟 Boutons */
+.btn {
+  @apply px-6 py-3 rounded-lg font-medium transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+/* 🌟 Animations d'apparition */
+.fade-in {
+  @apply opacity-0 translate-y-4 transition-all duration-700 ease-out;
+}
+
+.fade-in-visible {
+  @apply opacity-100 translate-y-0;
+}
+
+/* 🌟 Conteneur principal */
+.container {
+  @apply max-w-7xl mx-auto px-6 lg:px-8;
 }
